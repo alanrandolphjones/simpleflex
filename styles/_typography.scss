@@ -1,0 +1,83 @@
+/*Main Fonts n' Stuff*/
+
+/*font classes specified by block names (eg. nav__header-2) will be found in component SASS files. */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.header-3 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    &--darker {
+        color: #343434;
+        text-align: left;
+    }
+    &--yellow:hover {
+        color: $yellow1;
+    }
+    &--green:hover {
+        color: $green1;
+    }
+    &--red:hover {
+        color: $red1;
+    }
+}
+
+.header-4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-family: 'Raleway', sans-serif;
+    color: #989898;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    &--darker {
+        color: #343434;
+        text-align: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+    &--smaller {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+}
+
+.btn, .portfolio__gallery__figure__caption {
+    font-family: 'Raleway', sans-serif;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}

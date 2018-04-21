@@ -4,84 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simplefelx</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Simpleflex</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:300,700" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <img src="simpleflex/images/logo.png" alt="Simpleflex logo">
-            <ul class="main-nav">
-                <li><a class="main-nav__list-item main-nav__list-item--active" href="index.html">Home</a></li>
-                <li><a class="main-nav__list-item" href="#">Active</a></li>
-                <li><a class="main-nav__list-item" href="#">Portfolio</a></li>
-                <li><a class="main-nav__list-item" href="#">Blog</a></li>
-                <li><a class="main-nav__list-item" href="#">Contact</a></li>
-            </ul>
+            <div class="wrapper">
+                <img class="nav-logo" src="simpleflex/images/logo.png" alt="Simpleflex logo">
+                <ul class="main-nav">
+                    <li class="main-nav__list-length"><a class="main-nav__list-item main-nav__list-item--active" href="index.html">Home</a></li>
+                    <li class="main-nav__list-length"><a class="main-nav__list-item" href="#">Active</a></li>
+                    <li class="main-nav__list-length"><a class="main-nav__list-item" href="#">Portfolio</a></li>
+                    <li class="main-nav__list-length"><a class="main-nav__list-item" href="#">Blog</a></li>
+                    <li class="main-nav__list-length main-nav__list-length--last"><a class="main-nav__list-item" href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="hero">
-            <div class="slide">
-                <h2 class="header-2 hero__slide__header-2"><spanclass="slide__header-2--dark-and-bold">Everything</span> You Need</h2>
-                <p class="paragraph hero__slide__paragraph">Simplefex is the best solution for you. So you can presentyour business and services properly</p>
-                <a class="btn slide__btn" href="#">Purchase this theme</a>
-                <img class="slide__img" src="simpleflex/images/mockup-1.png" alt="smartphone design mockup">
-            </div>
-            <div class"slider">
-                <div class="slider__dot hero__slider__dot--active"></div>
-                <div class="slider__dot"></div>
-                <div class="slider__dot"></div>
+            <div class="hero__slide">
+                <div class="wrapper">
+                    <h2 class="header-2 hero__slide__header-2"><span class="hero__slide__header-2--darker">Everything</span> You Need</h2>
+                    <p class="paragraph paragraph--darker">Simplefex is the best solution for you. So you can present your business and services properly</p>
+                    <a class="btn hero__slide__btn" href="#">Purchase this theme</a>
+                </div>
+                <img class="hero__slide__img" src="simpleflex/images/mockup-1.png" alt="smartphone design mockup">
+                <div class="hero__slider">
+                    <div><a class="hero__slider__dot hero__slider__dot--active" href="#"></a></div>
+                    <div><a class="hero__slider__dot" href="#"></a></div>
+                    <div><a class="hero__slider__dot" href="" id=""></a></div>
+                </div>
+                <div class="triangle triangle--yellow">
+
+                </div>
             </div>
         </section>
     </header>
 
     <main class="main">            
         <section class="about">
-            <h2 class="header-2">About Us</h2>
-            <p class="paragraph"></p>
-            <hr class="hr">
-            <div class="about__cards">
-                <div class="card card--light about__cards__card">
-                    <img class="about__cards__card__img" src="simpleflex/images/icon-modern.png" alt="modern icon">
-                    <h3 class="header-3 about__cards__card__header-3">Modern</h3>
-                    <p class"paragraph paragraph--smaller about__cards__card__paragraph">Lorem ipsum dolor sit, ametconsectetur adipisicing elit. Fugit, ipsum?</p>
-                </div>
-                <div class="card card--light about__cards__card">
-                    <img class="about__cards__card__img" src="simpleflex/images/icon-simple.png" alt="simple icon">
-                    <h3 class="header-3 about__cards__card__header-3">Simple</h3>
-                    <p class "paragraph paragraph--smaller about__cards__card__paragraph">Lorem ipsum dolor sit ametconsectetur adipisicing elit. Impedit, ipsa.</p>
-                </div>
-                <div class="card card--light about__cards__card">
-                    <img class="about__cards__card__img" src="simpleflex/images/icon-flexible.png" alt="flexible icon">
-                    <h3 class="header-3 about__cards__card__header-3">Flexible</h3>
-                    <p class "paragraph paragraph--smaller about__cards__card__paragraph">Lorem ipsum dolor sit ametconsectetur adipisicing elit. Autem, eaque?</p>
+            <div class="wrapper">
+                <h2 class="header-2">About Us</h2>
+                <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, at officia! Dolores quisquam praesentium fugiat.</p>
+                <hr class="hr hr--lighter">
+                <div class="about__cards">
+                    <div class="card card--light card--yellow about__card">
+                        <img class="about__card__img" src="simpleflex/images/icon-modern.png" alt="modern icon">
+                        <h3 class="header-3 header-3--yellow"><a href="#">Modern</a></h3>
+                        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit, ametconsectetur adipisicing elit. Fugit, ipsum?</p>
+                    </div>
+                    <div class="card card--light about__card">
+                        <img class="about__card__img" src="simpleflex/images/icon-simple.png" alt="simple icon">
+                        <h3 class="header-3 header-3--red"><a href="#">Simple</a></h3>
+                        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit ametconsectetur adipisicing elit. Impedit, ipsa.</p>
+                    </div>
+                    <div class="card card--light card--green about__card">
+                        <img class="about__card__img" src="simpleflex/images/icon-flexible.png" alt="flexible icon">
+                        <h3 class="header-3 header-3--green"><a href="#">Flexible</a></h3>
+                        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit ametconsectetur adipisicing elit. Autem, eaque?</p>
+                    </div>
                 </div>
             </div>
         </section>
     
         <section class="skills">
-            <h2 class="heading-2">Our Skills</h2>
-            <p class="paragraph">AIR is focusing on <br>Web Design / WP Development / HTML Integration </p>
-            <hr class="hr">
-            <div class="skills__nugget-line">
-                <div class="skills__nugget-line__nugget">
-                    <img src="simpleflex/images/circle-1.png" alt="web design circle"class="skills__nugget-line__nugget__img">
-                    <h3 class="header-3 skills__nugget-line__nugget__header-3">Web Design</h3>
-                    <p class="paragraph paragraph--smaller skills__nugget-line__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
-                </div>
-                <div class="skills__nugget-line__nugget">
-                    <img src="simpleflex/images/circle-2.png" alt="" class="skills__nugget-line__nugget__img">
-                    <h3 class="header-3 skills__nugget-line__nugget__header-3">WordPress</h3>
-                    <p class="paragraph paragraph--smaller skills__nugget-line__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
-                </div>
-                <div class="skills__nugget-line__nugget">
-                    <img src="simpleflex/images/circle-3.png" alt="" class="skills__nugget-line__nugget__img">
-                    <h3 class="header-3 skills__nugget-line__nugget__header-3">jQuery</h3>
-                    <p class="paragraph paragraph--smaller skills__nugget-line__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
-                </div>
-                <div class="skills__nugget-line__nugget">
-                    <img src="simpleflex/images/circle-4.png" alt="" class="skills__nugget-line__nugget__img">
-                    <h3 class="header-3 skills__nugget-line__nugget__header-3">HTML / CSS</h3>
-                    <p class="paragraph paragraph--smaller skills__nugget-line__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
+            <div class="wrapper">
+                <h2 class="header-2">Our Skills</h2>
+                <p class="paragraph">AIR is focusing on <br>Web Design / WP Development / HTML Integration </p>
+                <hr class="hr hr--darker">
+                <div class="skills__nugget-line">
+                    <div class="skills__nugget">
+                        <img src="simpleflex/images/circle-1.png" alt="web design circle"class="skills__nugget__img">
+                        <h3 class="header-3">Web Design</h3>
+                        <p class="paragraph paragraph--smaller skills__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
+                    </div>
+                    <div class="skills__nugget">
+                        <img src="simpleflex/images/circle-2.png" alt="" class="skills__nugget__img">
+                        <h3 class="header-3">WordPress</h3>
+                        <p class="paragraph paragraph--smaller skills__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
+                    </div>
+                    <div class="skills__nugget">
+                        <img src="simpleflex/images/circle-3.png" alt="" class="skills__nugget__img">
+                        <h3 class="header-3">jQuery</h3>
+                        <p class="paragraph paragraph--smaller skills__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
+                    </div>
+                    <div class="skills__nugget">
+                        <img src="simpleflex/images/circle-4.png" alt="" class="skills__nugget__img">
+                        <h3 class="header-3">HTML / CSS</h3>
+                        <p class="paragraph paragraph--smaller skills__nugget__paragraph">Lorem ipsum, dolorsit amet consectetur adipisicing elit. Itaque, atque?</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,7 +106,7 @@
         <section class="latest">
             <h2 class="header-2">Latest Projects</h2>
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veniam soluta incidunt.Sunt, eius dolor.</p>
-            <hr class="hr">
+            <hr class="hr hr--lighter">
             <div class="latest__carousel">
                 <div class="chevron-left">
                     <i class="fas fa-chevron-left"></i>
@@ -109,61 +122,61 @@
         <section class="team">
             <h2 class="header-2">Meet the Team</h2>
             <p class="paragraph">A proud group of individuals who came together in perfect unity to present you withthis.</p>
-            <hr class="hr">
+            <hr class="hr hr--darker">
             <div class="team__cards">
-                <div class="card card--dark team__cards__card">
-                    <img src="simpleflex/images/headshot-1.png" alt="headshot of person" class="team__cards__card__img">
-                    <ul class="social-media team__cards__card__social-media">
+                <div class="card card--dark team__card">
+                    <img src="simpleflex/images/headshot-1.png" alt="headshot of person" class="team__card__img">
+                    <ul class="social-media team__card__social-media">
                         <li>
-                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="pinterest-icon"><i class="fab fa-pinterest-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card card--dark team__cards__card">
-                    <img src="simpleflex/images/headshot-2.png" alt="headshot of person" class="team__cards__card__img">
-                    <ul class="social-media team__cards__card__social-media">
-                        <li>
-                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="dribble-icon"><i class="fab fa-dribbble-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="pinterest-icon"><i class="fab fa-pinterest-square"></i></a>
+                            <a href="#" class="pinterest-icon"><i class="fab fa-pinterest-square fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="card card--dark team__cards__card">
-                    <img src="simpleflex/images/headshot-3.png" alt="headshot of person" class="team__cards__card__img">
-                    <ul class="social-media team__cards__card__social-media">
+                <div class="card card--dark team__card">
+                    <img src="simpleflex/images/headshot-2.png" alt="headshot of person" class="team__card__img">
+                    <ul class="social-media team__card__social-media">
                         <li>
-                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="dribble-icon"><i class="fab fa-dribbble-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="flickr-icon"><i class="fab fa-flickr"></i></a>
+                            <a href="#" class="pinterest-icon"><i class="fab fa-pinterest-square fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="card card--dark team__cards__card">
-                    <img src="simpleflex/images/headshot-4.png" alt="headshot of person" class="team__cards__card__img">
-                    <ul class="social-media team__cards__card__social-media">
+                <div class="card card--dark team__card">
+                    <img src="simpleflex/images/headshot-3.png" alt="headshot of person" class="team__card__img">
+                    <ul class="social-media team__card__social-media">
                         <li>
-                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="facebook-icon"><i class="fab fa-facebook-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="google-icon"><i class="fab fa-google"></i></a>
+                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square fa-fw"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="flickr-icon"><i class="fab fa-flickr fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card card--dark team__card">
+                    <img src="simpleflex/images/headshot-4.png" alt="headshot of person" class="team__card__img">
+                    <ul class="social-media team__card__social-media">
+                        <li>
+                            <a href="#" class="twitter-icon"><i class="fab fa-twitter-square fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="google-icon fa-fw"><i class="fab fa-google"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="linkedin-icon fa-fw"><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -171,25 +184,25 @@
         </section>
         <aside class="stats">
             <div class="stats__nugget-line">
-                <div class="stats__nugget-line__nugget">
-                    <img src="simpleflex/images/icon-1.png" alt="icon of person"class="stats__nugget__line__nugget__icon">
-                    <h3 class="header-3 stats__nugget-line__nugget__header-3">2500</h3>
-                    <a href="" class="btn stats__nugget-line__nugget__btn">Happy Clients</a>
+                <div class="stats__nugget">
+                    <img src="simpleflex/images/icon-1.png" alt="icon of person" class="stats__nugget__icon">
+                    <h3 class="header-3">2500</h3>
+                    <a href="" class="btn stats__nugget__btn">Happy Clients</a>
                 </div>
-                <div class="stats__nugget-line__nugget">
-                    <img src="simpleflex/images/icon-2.png" alt="icon of lightbulb"class="stats__nugget__line__nugget__icon">
-                    <h3 class="header-3 stats__nugget-line__nugget__header-3">650</h3>
-                    <a href="" class="btn stats__nugget-line__nugget__btn">Projects Made</a>
+                <div class="stats__nugget">
+                    <img src="simpleflex/images/icon-2.png" alt="icon of lightbulb" class="stats__nugget__icon">
+                    <h3 class="header-3">650</h3>
+                    <a href="" class="btn stats__nugget__btn">Projects Made</a>
                 </div>
-                <div class="stats__nugget-line__nugget">
-                    <img src="simpleflex/images/icon-3.png" alt="icon of paper airplane"class="stats__nugget__line__nugget__icon">
-                    <h3 class="header-3 stats__nugget-line__nugget__header-3">5780</h3>
-                    <a href="" class="btn stats__nugget-line__nugget__btn">Letters Sent</a>
+                <div class="stats__nugget">
+                    <img src="simpleflex/images/icon-3.png" alt="icon of paper airplane" class="stats__nugget__icon">
+                    <h3 class="header-3">5780</h3>
+                    <a href="" class="btn stats__nugget__btn">Letters Sent</a>
                 </div>
-                <div class="stats__nugget-line__nugget">
-                    <img src="simpleflex/images/icon-4.png" alt="icon of crayon"class="stats__nugget__line__nugget__icon">
-                    <h3 class="header-3 stats__nugget-line__nugget__header-3">3400</h3>
-                    <a href="" class="btn stats__nugget-line__nugget__btn">Briefs Written</a>
+                <div class="stats__nugget">
+                    <img src="simpleflex/images/icon-4.png" alt="icon of crayon"class="stats__nugget__icon">
+                    <h3 class="header-3">3400</h3>
+                    <a href="" class="btn stats__nugget__btn">Briefs Written</a>
                 </div>
             </div>
         </aside>
@@ -197,7 +210,7 @@
         <section class="portfolio">
             <h2 class="header-2">Our Portfolio</h2>
             <p class="paragraph portfolio-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, recusandae eligendi. Ad nam sed et.</p>
-            <hr class="hr portfolio-hr">
+            <hr class="hr hr--lighter">
             <div class="portfolio__gallery-block">
                 <ul class="nav portfolio__gallery-block__nav">
                     <li><a class="portfolio__gallery-block__nav__link--active" href="#">All</a></li>
@@ -206,52 +219,52 @@
                     <li><a class="portfolio__gallery-block__nav__link" href="#">Print</a></li>
                     <li><a class="portfolio__gallery-block__nav__link" href="#">Miscellaneous</a></li>
                 </ul>
-                <div class="portfolio__gallery-block__gallery">
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-1.png" alt="items on a tray" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">Kopazito</figcaption>
+                <div class="portfolio__gallery">
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-1.png" alt="items on a tray" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">Kopazito</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-2.png" alt="jacket design on a laptop screen" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">I love pickles</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-2.png" alt="jacket design on a laptop screen" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">I love pickles</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-3.png" alt="abstract painting" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">Shotmen</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-3.png" alt="abstract painting" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">Shotmen</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-4.png" alt="pencil and sketch" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">Voodoo</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-4.png" alt="pencil and sketch" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">Voodoo</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-5.png" alt="pencils and an illustration" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">Barbapapa</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-5.png" alt="pencils and an illustration" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">Barbapapa</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-6.png" alt="traditional Japanese illustration" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">Ron Weasley</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-6.png" alt="traditional Japanese illustration" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">Ron Weasley</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-7.png" alt="drawing on a tablet" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">My diamond returns!</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-7.png" alt="drawing on a tablet" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">My diamond returns!</figcaption>
                     </figure>
-                    <figure class="portfolio__gallery-block__gallery__figure">
-                        <img src="simpleflex/images/portfolio-8.png" alt="interesting cut-out figures" class="portfolio__gallery-block__gallery__figure__img">
-                        <figcaption class="portfolio__gallery-block__gallery__figure__caption">I can pay my bills</figcaption>
+                    <figure class="portfolio__gallery__figure">
+                        <img src="simpleflex/images/portfolio-8.png" alt="interesting cut-out figures" class="portfolio__gallery__figure__img">
+                        <figcaption class="portfolio__gallery__figure__caption">I can pay my bills</figcaption>
                     </figure>
                 </div>
             </div>
-            <a href="#" class="btn portfolio-btn"></a>
+            <a href="#" class="btn btn--white portfolio-btn"></a>
         </section>
 
 
         <section class="blog">
             <h2 class="header-2">Our Blog</h2>
             <p class="paragraph">Welcome to our blog, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,unde?</p>
-            <hr class="hr">
+            <hr class="hr hr--darker">
             <div class="blog__cards">
-                <div class="card blog__cards__card blog__cards__card--bigger">
-                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__cards__card__img">
+                <div class="card card--dark blog__card blog__card--bigger">
+                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__card__img">
                     <h3 class="header-3">Post With Image</h3>
                     <h4 class="header-4">Dec 29, 2013</h4>
                     <p class="paragraph paragraph-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis quasi repellendus natus consectetur accusamus hic suscipit officia ratione fugit odit.</p>
@@ -259,23 +272,23 @@
                     <ul class="social-media">
                         <li>
                             <a class="facebook-icon" href="#">
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="twitter-icon" href="#">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="google-icon" href="#">
-                                <i class="fab fa-google"></i>
+                                <i class="fab fa-google fa-fw"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="card blog__cards__card">
-                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__cards__card__img">
+                <div class="card card--dark blog__card">
+                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__card__img">
                     <h3 class="header-3">Post With Image</h3>
                     <h4 class="header-4">Dec 29, 2013</h4>
                     <p class="paragraph paragraph-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis quasi repellendus natus consectetur accusamus hic suscipit
@@ -284,23 +297,23 @@
                     <ul class="social-media">
                         <li>
                             <a class="facebook-icon" href="#">
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="twitter-icon" href="#">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="google-icon" href="#">
-                                <i class="fab fa-google"></i>
+                                <i class="fab fa-google fa-fw"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="card blog__cards__card">
-                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__cards__card__img">
+                <div class="card card--dark blog__card">
+                    <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="blog__card__img">
                     <h3 class="header-3">Post With Image</h3>
                     <h4 class="header-4">Dec 29, 2013</h4>
                     <p class="paragraph paragraph-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis quasi repellendus natus consectetur accusamus hic suscipit
@@ -309,28 +322,28 @@
                     <ul class="social-media">
                         <li>
                             <a class="facebook-icon" href="#">
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="twitter-icon" href="#">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter-square fa-fw"></i>
                             </a>
                         </li>
                         <li>
                             <a class="google-icon" href="#">
-                                <i class="fab fa-google"></i>
+                                <i class="fab fa-google fa-fw"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <a href="#" class="btn blog-btn">View All</a>
+            <a href="#" class="btn btn--white blog-btn">View All</a>
         </section>
 
         <aside class="contact">
             <h4 class="header-4 contact__header-4">+91 544 567 8943</h4>
-            <h3 class="header-3"><a href="mailto:info@simpleplex.com" clas="contact__header3-link">info@simpleplex.com</a></h3>
+            <h3 class="header-3 contact__header-3"><a href="mailto:info@simpleplex.com" clas="contact__header3-link">info@simpleplex.com</a></h3>
             <h5 class="header-5">8605 Santa Monica Blvd, Los Angeles, California, 97845, US</h5>
         </aside>
 
@@ -343,41 +356,41 @@
         <section class="in-touch">
             <h2 class="header-2">Get in Touch</h2>
             <p class="paragraph">Feel free to contact us at any time, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ullam.</p>
-            <hr class="hr">
+            <hr class="hr hr--darker">
             <ul class="social-media">
                 <li>
                     <a class="facebook-icon" href="#">
-                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-facebook-square fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a class="twitter-icon" href="#">
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-twitter-square fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="flickr-icon">
-                        <i class="fab fa-flickr"></i>
+                        <i class="fab fa-flickr fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a class="google-icon" href="#">
-                        <i class="fab fa-google"></i>
+                        <i class="fab fa-google fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="linkedin-icon">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="dribble-icon">
-                        <i class="fab fa-dribbble-square"></i>
+                        <i class="fab fa-dribbble-square fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="pinterest-icon">
-                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-pinterest-square fa-fw"></i>
                     </a>
                 </li>
             </ul>
@@ -385,56 +398,56 @@
                 <input class="in-touch__form__input" type="text" placeholder="Name" title="name">
                 <input class="in-touch__form__input" type="email" placeholder="email" title="email">
                 <textarea class="in-touch__form__input in-touch__form__input--textarea" name="message" id="message" placeholder="Message"></textarea>
-                <input class="btn in-touch__form__input in-touch__form__input--submit-btn" value="Send" type="submit" class="btn">
+                <input class="btn btn--white in-touch__form__input in-touch__form__input--submit" value="Send" type="submit">
             </form>
         </section>
 
         <footer class="footer">
             <div class="footer__nugget-line">
-                <div class="footer__nugget-line__nugget">
-                    <h3 class="header-3 footer__nugget-line__nugget__header-3">Text Widget</h3>
+                <div class="footer__nugget">
+                    <h3 class="header-3 header-3--darker">Text Widget</h3>
                     <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur illum sit pariatur sed vel, adipisci animi ducimus laborum dolor voluptatem harum sequi quibusdam at, repellat iure quo cupiditate officia laboriosam?</p>
                 </div>
-                <div class="footer__nugget-line__nugget">
-                    <h3 class="header-3 footer__nugget-line__nugget__header-3">Recent Posts</h3>
-                    <div class="footer__nugget-line__nugget__nugget-column__nugget">
-                        <img src="simpleflex/images/blog-1.png" alt="colourful wall" class="footer__nugget-line__nugget__nugget-column__nugget__img">
-                        <h3 class="header-3 footer__nugget-line__nugget__nugget-column__nugget__header-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <h4 class="header-4 footer__nugget-line__nugget__nugget-column__nugget__header-4">Dec. 31, 2013</h4>
+                <div class="footer__nugget">
+                    <h3 class="header-3 header-3--darker">Recent Posts</h3>
+                    <div class="footer__small-nugget">
+                        <img src="simpleflex/images/blog-1.png" alt="colourful wall" class="footer__small-nugget__img">
+                        <h4 class="header-4 footer__small-nugget__header-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>
                     </div>
-                    <div class="footer__nugget-line__nugget__nugget-column__nugget">
-                        <img src="simpleflex/images/blog-2.png" alt="colourful wall" class="footer__nugget-line__nugget__nugget-column__nugget__img">
-                        <h3 class="header-3 footer__nugget-line__nugget__nugget-column__nugget__header-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <h4 class="header-4 footer__nugget-line__nugget__nugget-column__nugget__header-4">Dec. 31, 2013</h4>
+                    <div class="footer__small-nugget">
+                        <img src="simpleflex/images/blog-2.png" alt="colourful wall" class="footer__small-nugget__img">
+                        <h4 class=" header-4 footer__small-nugget__header-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>
                     </div>
-                    <div class="footer__nugget-line__nugget__nugget-column__nugget">
-                        <img src="simpleflex/images/blog-3.png" alt="colours" class="footer__nugget-line__nugget__nugget-column__nugget__img">
-                        <h3 class="header-3 footer__nugget-line__nugget__nugget-column__nugget__header-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
-                        <h4 class="header-4 footer__nugget-line__nugget__nugget-column__nugget__header-4">Dec. 31, 2013</h4>
+                    <div class="footer__small-nugget">
+                        <img src="simpleflex/images/blog-3.png" alt="colours" class="footer__small-nugget__img">
+                        <h4 class="header-4 footer__small-nugget__header-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+                        <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>
                     </div>
                 </div>
-                <div class="footer__nugget-line__nugget">
-                    <h3 class="header-3 footer__nugget-line__nugget__header-3">Our Newsletter</h3>
+                <div class="footer__nugget">
+                    <h3 class="header-3 header-3--darker">Our Newsletter</h3>
                     <p class="paragraph paragraph--smaller">Subscribe to our latest news to be updated</p>
-                    <form action="POST" class="footer__nugget-line__nugget__form">
-                        <input type="email" class="footer__nugget-line__nugget__form__input">
-                        <input type="submit" class="btn footer__nugget-line__nugget__form__input--btn">
+                    <form action="POST" class="footer__nugget__form">
+                        <input type="email" class="footer__nugget__form__input">
+                        <input type="submit" class="btn footer__nugget__form__input--btn">
                     </form>
                 </div>
-                <div class="footer__nugget-line__nugget">
-                    <h3 class="header-3 footer__nugget-line__nugget__header-3">Flickr Widget</h3>
-                    <div class="footer__nugget-line__nugget__gallery">
-                        <img src="simpleflex/images/flickr-1.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
-                        <img src="simpleflex/images/flickr-2.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
-                        <img src="simpleflex/images/flickr-3.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
-                        <img src="simpleflex/images/flickr-4.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
-                        <img src="simpleflex/images/flickr-5.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
-                        <img src="simpleflex/images/flickr-6.png" alt="illustrations on a wall" class="footer__nugget-line__nugget__gallery__img">
+                <div class="footer__nugget">
+                    <h3 class="header-3 header-3--darker">Flickr Widget</h3>
+                    <div class="footer__nugget__gallery">
+                        <img src="simpleflex/images/flickr-1.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
+                        <img src="simpleflex/images/flickr-2.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
+                        <img src="simpleflex/images/flickr-3.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
+                        <img src="simpleflex/images/flickr-4.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
+                        <img src="simpleflex/images/flickr-5.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
+                        <img src="simpleflex/images/flickr-6.png" alt="illustrations on a wall" class="footer__nugget__gallery__img">
                     </div>
                 </div>
             </div>
             <aside class="bottom-footer">
-                <p>&copy; 2014. Simpleflex Template by <a href="#">DX Templates</a></p>
+                <p class="paragraph bottom-footer__paragraph">&copy; 2014. Simpleflex Template by <a class="bottom-footer__paragraph__link" href="#">DX Templates</a></p>
             </aside>
         </footer>
 

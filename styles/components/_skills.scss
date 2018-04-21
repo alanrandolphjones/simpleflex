@@ -1,0 +1,19 @@
+/*Skills section plus Quote*/
+
+.skills {
+    background: $dark2;
+    .wrapper {
+        padding: 50px 0;
+    }
+    &__nugget-line {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nugget {
+        width: 20%;
+        &__img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
