@@ -12,6 +12,9 @@
     &--green {
         border-color: $green1;
     }
+    &--red {
+        border-color: $red1;
+    }
 }
 
 .btn {
@@ -19,6 +22,8 @@
     padding: 10px 15px;
     &--white {
         color: #fff;
+        padding: 10px 70px;
+        display: inline-block;
     }
     &:hover {
         color: #343434;
@@ -56,6 +61,22 @@
             background: linear-gradient(to top left, transparent 0%, transparent 50%, $yellow2 50%, $yellow2 100%);
         }
     }
+    &--red {
+        &::before {
+            background: linear-gradient(to top right, transparent 0%, transparent 50%, $red1 50%, $red1 100%);
+        }
+        &::after {
+            background: linear-gradient(to top left, transparent 0%, transparent 50%, $red2 50%, $red2 100%);
+        }
+    }
+    &--green {
+        &::before {
+            background: linear-gradient(to top right, transparent 0%, transparent 50%, $green1 50%, $green1 100%);
+        }
+        &::after {
+            background: linear-gradient(to top left, transparent 0%, transparent 50%, $green2 50%, $green2 100%);
+        }
+    }
 }
 
 .hr {
@@ -68,4 +89,61 @@
         border: 1px solid #2b2b2b;
     }
     
+}
+
+.icon {
+    color: #fff;
+    font-size: 15px;;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    &:hover {
+        background: white;
+    }
+    &--facebook {
+        &:hover {
+            color: #517ebd;
+        }
+        background: #517ebd;
+    }
+    &--twitter {
+        &:hover {
+            color: #1daeed;
+        }
+        background: #1daeed;
+    }
+    &--pinterest {
+        &:hover {
+            color: #cd1d23;
+        }
+        background: #cd1d23;
+    }
+    &--dribbble {
+        &:hover {
+            color: #f56a9b;
+        }
+        background: #f56a9b;
+    }
+    &--flickr {
+        &:hover {
+            color: #fc1686;
+        }
+        background: #fc1686;
+    }
+    &--google {
+        &:hover {
+            color: #ca4339;
+        }
+        background: #ca4339;
+    }
+    &--linkedin {
+        &:hover {
+            color: #0d659a;
+        }
+        background: #0d659a;
+    }
 }

@@ -17,3 +17,42 @@
         }
     }
 }
+
+.quote {
+    background: $red-bg;
+    padding: 100px 0 100px 0;
+    position: relative;
+    &__header-3 {
+        width: 45%;
+        margin: 30px auto;
+        color: #343434;
+        font-size: 60px;
+        line-height: 55px;
+        display: block;
+        position: relative;
+        &::before,
+        &::after {
+            font-size: 140px;
+            line-height: 140px;
+            color: #fff;
+            position: absolute;
+        }
+        &::before {
+            content: '“';
+            top: -40px;
+            left: -15%;
+        }
+        &::after {
+            content: '”';
+            top: -40px;
+            right: -15%;
+        }
+    }
+    &__header-4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 55px;
+        text-transform: none;
+    }
+}

@@ -2,7 +2,7 @@
 /* NAV + Logo */
 
 .nav {
-    background: linear-gradient(to right, white 0%, white 50%, $white2 50%, $white2 100%);
+    background: $white-bg;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -41,7 +41,7 @@
 /* Hero */
 .hero {
     &__slide {
-        background: linear-gradient(to right, $yellow1 0%, $yellow1 50%, $yellow2 50%, $yellow2 100%);
+        background: $yellow-bg;
         position: relative;
         .wrapper {
             display: flex;

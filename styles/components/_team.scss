@@ -1,0 +1,53 @@
+/*Team n' stats*/
+
+.team {
+    background: $dark2;
+    .wrapper {
+        padding: 50px;
+    }
+    &__cards {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 23%;
+        &__img {
+            width: 100%;
+            display: block;
+        }
+        &__social-media {
+            display: flex;
+            margin: 30px 0;
+            justify-content: center;
+        }
+    }
+}
+
+.stats {
+    background: $green-bg;
+    position: relative;
+    .wrapper {
+        padding: 100px 0;
+    }
+    &__nugget-line {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    &__nugget {
+        text-align: center;
+        &__header-3 {
+            font-family: 'Open Sans', sans-serif;
+            color: #343434;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 55px;
+            margin: 30px 0;
+        }
+        &__icon {
+        display: block;
+        margin: 0 auto;
+        }
+    }
+}

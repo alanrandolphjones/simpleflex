@@ -1,0 +1,41 @@
+.in-touch {
+    background: $dark2;
+    .wrapper {
+        padding: 50px 0 10px 0;
+    }
+    &__social-media {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        &__input {
+            margin: 5px;
+            text-align: center;
+            padding: 5px 0;
+            background: #2b2b2b;
+            font-family: 'Raleway', sans-serif;
+            color: #989898;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            border: none;
+            &:focus {
+                box-shadow: 0px 0px 10px rgb(109, 109, 109);
+            }
+            &--textarea {
+                height: 200px;
+                resize: none;
+            }
+        }
+        &--submit {
+            background: transparent;
+            margin: 40px 0;
+            align-self: center;
+        }
+    }
+}

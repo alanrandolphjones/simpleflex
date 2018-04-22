@@ -1,0 +1,28 @@
+.latest {
+    background: $dark1;
+    .wrapper {
+        padding-top: 50px;
+    }
+    &__carousel {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        &__chevron {
+            width: 20%;
+            color: white;
+            &:hover {
+                color: #3c3c3c;
+            }
+            &--left {
+                text-align: left;
+            }
+            &--right {
+                text-align: right;
+            }
+        }
+        &__cell__img {
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}

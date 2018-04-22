@@ -9,3 +9,11 @@ $red1: #fd7173;
 $red2: #f56d6f;
 $green1: #aad16a;
 $green2: #a5ca67;
+
+$yellow-bg: linear-gradient(to right, $yellow1 0%, $yellow1 50%, $yellow2 50%, $yellow2 100%);
+
+$green-bg: linear-gradient(to right, $green1 0%, $green1 50%, $green2 50%, $green2 100%);
+
+$red-bg: linear-gradient(to right, $red1 0%, $red1 50%, $red2 50%, $red2 100%);
+
+$white-bg: linear-gradient(to right, white 0%, white 50%, $white2 50%, $white2 100%);
