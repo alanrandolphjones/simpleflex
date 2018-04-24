@@ -59,6 +59,9 @@
         }
         &::after {
             background: linear-gradient(to top left, transparent 0%, transparent 50%, $yellow2 50%, $yellow2 100%);
+            @media (max-width: 600px) {
+                background: linear-gradient(to top left, transparent 0%, transparent 50%, $yellow1 50%, $yellow1 100%)
+            }
         }
     }
     &--red {
@@ -67,6 +70,9 @@
         }
         &::after {
             background: linear-gradient(to top left, transparent 0%, transparent 50%, $red2 50%, $red2 100%);
+            @media (max-width: 600px) {
+                background: linear-gradient(to top left, transparent 0%, transparent 50%, $red1 50%, $red1 100%)
+            }
         }
     }
     &--green {
@@ -75,6 +81,9 @@
         }
         &::after {
             background: linear-gradient(to top left, transparent 0%, transparent 50%, $green2 50%, $green2 100%);
+            @media (max-width: 600px) {
+                background: linear-gradient(to top left, transparent 0%, transparent 50%, $green1 50%, $green1 100%)
+            }
         }
     }
 }

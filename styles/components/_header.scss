@@ -3,17 +3,24 @@
 
 .nav {
     background: $white-bg;
+    @media (max-width: 600px) {
+        background: white;
+    }
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
+        position: relative;
+        @media (max-width: 650px) {
+            padding: 0;
+        }
     }
     .main-nav {
-        width: 50%;
+        min-width: 50%;
         display: flex;
         &__list-length {
-            width: 15%;
+            min-width: 15%;
             border-right: 1px solid rgb(221, 221, 221);
             display: block;
             &:hover {
@@ -21,6 +28,9 @@
             }
             &--last {
                 border-right: 1px solid $white2;
+            }
+            @media (max-width: 650px) {
+                border-right: none;
             }
         }
         &__list-item {
@@ -30,9 +40,48 @@
             font-size: 13px;
             font-weight: 300;
             text-align: center;
+            padding: 0 10px;
             &--active,
             &:hover {
                 color: #fd7070;
+            }
+        }
+        @media (max-width: 940px) {
+            justify-content: flex-end;
+        }
+        @media (max-width: 650px) {
+            position: absolute;
+            display: none;
+            background: white;
+            border-width: 0;
+            top: 100%;
+            right: -2.6%;
+            z-index: 10;
+            &__list-item {
+                display: block;
+                padding: 15px 30px;
+                background: $white2;
+                &:hover {
+                    background: #e0e0e0;
+                }
+            }
+            &:hover {
+                display: block;
+            }
+        }
+    }
+    .hamburger {
+        display: none;
+        font-size: 45px;
+        height: 100%;
+        padding: 20px;
+        @media (max-width: 650px) {
+            display: block;
+            &:hover {
+                color: $red1;    
+                & + .main-nav {
+                    display: block;
+                }
             }
         }
     }
@@ -43,6 +92,9 @@
     &__slide {
         background: $yellow-bg;
         position: relative;
+        @media (max-width: 600px) {
+            background: $yellow1;
+        }
         .wrapper {
             display: flex;
             width: 40%;
@@ -52,12 +104,28 @@
             align-items: flex-start;
             position: relative;
             z-index: 5;
+            @media (max-width: 1024px) {
+                margin-left: 5%;
+                padding-top: 50px;
+                padding-bottom: 0;
+            }
+            @media (max-width: 600px) {
+                width: 80%;
+            }
         }
         &__header-2 {
             font-size: 80px;
             line-height: 65px;
             text-align: left;
             margin: 0;
+            @media (max-width: 768px) {
+                font-size: 60px;
+                line-height: 45px;
+            }
+            @media (max-width: 420px) {
+                font-size: 45px;
+                line-height: 35px;
+            }
             &--darker {
                 color: #343434;
                 font-weight: 700;
@@ -66,6 +134,9 @@
         &__btn {
             text-align: left;
             margin-top: 50px;
+            @media (max-width: 600px) {
+                margin-bottom: 30px;
+            }
         }
         &__img {
             width: 45%;
@@ -73,6 +144,12 @@
             top: 100px;
             right: 10%;
             z-index: 0;
+            @media (max-width: 1024px) {
+                right: 5%
+            }
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
     }
     &__slider {

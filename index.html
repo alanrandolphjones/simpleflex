@@ -14,6 +14,12 @@
         <nav class="nav">
             <div class="wrapper">
                 <img class="nav-logo" src="simpleflex/images/logo.png" alt="Simpleflex logo">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
                 <ul class="main-nav">
                     <li class="main-nav__list-length"><a class="main-nav__list-item main-nav__list-item--active" href="index.html">Home</a></li>
                     <li class="main-nav__list-length"><a class="main-nav__list-item" href="#">Active</a></li>
@@ -286,12 +292,14 @@
                 <h2 class="header-2">Our Blog</h2>
                 <p class="paragraph">Welcome to our blog, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,unde?</p>
                 <hr class="hr hr--darker">
-                <div class="blog__cards">
-                    <div class="card card--dark blog__card blog__card--bigger">
-                        <img src="simpleflex/images/blog-1.png" alt="sketchbooks" class="image">
+
+                <div class="blog__container">
+                    <div class="card card--dark blog__card blog__card--yellow blog__card--bigger">
+                        <img class="blog__card__img blog__card__img--wide" src="simpleflex/images/blog-1-wide.png" alt="">
+                        <img class="blog__card__img blog__card__img--square" src="simpleflex/images/blog-1-square.png" alt="">
                         <h3 class="header-3 blog__card__header-3">Post With Image</h3>
-                        <h4 class="header-4">Dec 29, 2013</h4>
-                        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ducimus.</p>
+                        <h4 class="header-4 blog__card__header-4">Dec. 29, 2013</h4>
+                        <p class="paragraph paragraph--smaller blog__card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.</p>
                         <ul class="social-media blog__card__social-media">
                             <li>
                                 <a href="#" class="icon icon--facebook">
@@ -304,59 +312,55 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="icon icon--google" href="#">
+                                <a href="#" class="icon icon--google">
                                     <i class="fab fa-google fa-fw"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="blog__small-cards">
-                        <div class="card card--red card--dark blog__card">
-                            <img src="simpleflex/images/blog-2.png" alt="a wooden hand" class="image">
-                            <h3 class="header-3 blog__card__header-3">Post With Image</h3>
-                            <h4 class="header-4">Dec 29, 2013</h4>
-                            <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quos!</p>
-                            <ul class="social-media blog__card__social-media">
-                                <li>
-                                    <a href="#" class="icon icon--facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="icon icon--twitter">
-                                        <i class="fab fa-twitter fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="icon icon--google" href="#">
-                                        <i class="fab fa-google fa-fw"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card card--green  card--dark blog__card">
-                            <img src="simpleflex/images/blog-3.png" alt="tattooed hand drawing" class="image">
-                            <h3 class="header-3 blog__card__header-3">Post With Image</h3>
-                            <h4 class="header-4">Dec 29, 2013</h4>
-                            <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, delectus.</p>
-                            <ul class="social-media blog__card__social-media">
-                                <li>
-                                    <a href="#" class="icon icon--facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="icon icon--twitter">
-                                        <i class="fab fa-twitter fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="icon icon--google" href="#">
-                                        <i class="fab fa-google fa-fw"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="card card--dark blog__card blog__card--red">
+                        <img class="blog__card__img blog__card__img--wide" src="simpleflex/images/blog-2-wide.png" alt="">
+                        <img class="blog__card__img blog__card__img--square" src="simpleflex/images/blog-2-square.png" alt="">
+                        <h3 class="header-3 blog__card__header-3">Post With Video</h3>
+                        <h4 class="header-4 blog__card__header-4">Dec. 29, 2013</h4>
+                        <p class="paragraph paragraph--smaller blog__card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil.</p>
+                        <ul class="social-media blog__card__social-media">
+                            <li>
+                                <a href="#" class="icon icon--facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li><a href="#" class="icon icon--twitter">
+                                <i class="fab fa-twitter fa-fw"></i>
+                            </a></li>
+                            <li><a href="#" class="icon icon--google">
+                                <i class="fab fa-google fa-fw"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="card card--dark blog__card blog__card--green">
+                        <img class="blog__card__img blog__card__img--wide" src="simpleflex/images/blog-3-wide.png" alt="">
+                        <img class="blog__card__img blog__card__img--square" src="simpleflex/images/blog-3-square.png" alt="">
+                        <h3 class="header-3 blog__card__header-3">Post With Slider</h3>
+                        <h4 class="header-4 blog__card__header-4">Dec. 29, 2013</h4>
+                        <p class="paragraph paragraph--smaller blog__card__paragraph">Lorem, dolor sit amet consectetur adipisicing elit. Laborum, nihil.</p>
+                        <ul class="social-media blog__card__social-media">
+                            <li>
+                                <a href="#" class="icon icon--facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon--twitter">
+                                    <i class="fab fa-twitter fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon--google">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <a href="#" class="btn btn--white blog__btn">View All</a>
@@ -369,11 +373,8 @@
             <h5 class="contact__header-5">8605 Santa Monica Blvd, Los Angeles, California, 97845, US</h5>
         </aside>
 
-
-
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.033730862775!2d-79.27861088450044!3d43.70984807911938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce640ba80951%3A0x71260ace53a4ad64!2sSantamonica+Blvd%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1524172272752"
         width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
 
         <section class="in-touch">
             <div class="wrapper">
@@ -435,17 +436,17 @@
                     </div>
                     <div class="footer__nugget">
                         <h3 class="header-3 header-3--darker">Recent Posts</h3>
-                        <div class="footer__small-nugget">
+                        <div class="footer__small-nugget clearfix">
                             <img src="simpleflex/images/footer-1.png" alt="colourful wall" class="footer__small-nugget__img">
                             <h4 class="header-4 footer__small-nugget__header-4"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h4>
                             <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>
                         </div>
-                        <div class="footer__small-nugget">
+                        <div class="footer__small-nugget clearfix">
                             <img src="simpleflex/images/footer-2.png" alt="colourful wall" class="footer__small-nugget__img">
                             <h4 class=" header-4 footer__small-nugget__header-4"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h4>
                             <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>
                         </div>
-                        <div class="footer__small-nugget">
+                        <div class="footer__small-nugget clearfix">
                             <img src="simpleflex/images/footer-3.png" alt="colours" class="footer__small-nugget__img">
                             <h4 class="header-4 footer__small-nugget__header-4"><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h4>
                             <h5 class="header-5 footer__small-nugget__header-5">Dec. 31, 2013</h5>

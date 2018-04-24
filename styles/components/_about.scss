@@ -2,14 +2,24 @@
     background: $dark1;
     .wrapper {
         padding: 50px 0 100px 0;
+        @media (max-width: 1024px) {
+            padding-bottom: 50px;
+        }
     }
     &__cards {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 600px) {
+            flex-flow: column wrap;
+        }
     }
     &__card {
         width: 30%;
         padding: 30px;
+        @media (max-width: 600px) {
+            width: calc(100% - 60px);
+            margin: 30px;
+        }
         &__img {
             margin: 0 auto;
             display: block;

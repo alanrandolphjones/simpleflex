@@ -7,10 +7,20 @@
     }
     &__nugget-line {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
+        @media (max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__nugget {
-        width: 20%;
+        width: 21%;
+        @media (max-width: 650px) {
+            width: 80%;
+            max-width: 300px;
+            margin: 30px;
+        }
         &__img {
             margin: 0 auto;
             display: block;
@@ -20,8 +30,17 @@
 
 .quote {
     background: $red-bg;
-    padding: 100px 0 100px 0;
+    @media (max-width: 600px) {
+        background: $red1;
+    }
+    padding: 100px 0;
     position: relative;
+    @media (max-width: 1024px) {
+        padding: 50px 0;
+    }
+    @media (max-width: 600px) {
+        background: $red1;
+    }
     &__header-3 {
         width: 45%;
         margin: 30px auto;
@@ -30,6 +49,10 @@
         line-height: 55px;
         display: block;
         position: relative;
+        @media (max-width: 650px) {
+            font-size: 30px;
+            line-height: 25px;
+        }
         &::before,
         &::after {
             font-size: 140px;
@@ -41,11 +64,17 @@
             content: '“';
             top: -40px;
             left: -15%;
+            @media (max-width: 650px) {
+                left: -40%;
+            }
         }
         &::after {
             content: '”';
             top: -40px;
             right: -15%;
+            @media (max-width: 650px) {
+                right: -40%;
+            }
         }
     }
     &__header-4 {
@@ -54,5 +83,8 @@
         font-weight: 300;
         line-height: 55px;
         text-transform: none;
+        @media (max-width: 650px) {
+            font-size: 20px;
+        }
     }
 }

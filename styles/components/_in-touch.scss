@@ -13,6 +13,9 @@
         flex-direction: column;
         width: 50%;
         margin: 0 auto;
+        @media (max-width: 650px) {
+            width: 90%;
+        }
         &__input {
             margin: 5px;
             text-align: center;
@@ -38,4 +41,8 @@
             align-self: center;
         }
     }
+}
+
+iframe {
+    display: block;
 }

@@ -6,55 +6,100 @@
     .wrapper {
         padding: 50px 0;
     }
-    &__cards {
+    &__container {
+        width: 100%;
         display: flex;
+        height: 500px;
+        flex-flow: column wrap;
+        @media (max-width: 914px) {
+            height: auto;
+        }
     }
     &__card {
-        .paragraph {
-            margin: 20px 0;
+        margin: 10px;
+        height: calc(50% - 20px);
+        display: block;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        border-bottom: none;
+        &--red {
+            border-right: 10px solid $red1;
         }
-        &__header-3 {
-        margin: 20px 0 5px 0;
+        &--green {
+            border-right: 10px solid $green1;
+        }
+        &--yellow {
+            border-right: 10px solid $yellow1;
+        }
+        @media (max-width: 600px) {
+            border-right: none;
+            padding-right: 0;
+            &--red {
+                border-bottom: 10px solid $red1;
+            }
+            &--green {
+                border-bottom: 10px solid $green1;
+            }
+            &--yellow {
+                border-bottom: 10px solid $yellow1;
+            }
+        }
+        @media (max-width: 914px) {
+            width: calc(100% - 20px)
+        }
+        @media (min-width: 914px) {
+            &__header-3 {
+                margin: 5px 0 5px 0;
+                font-size: 20px;
+                margin: 5px 0 20px 0;
+            }
+            &__paragraph {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        &__img {
+            &--square {
+                height: 100%;
+                float: left;
+                margin-right: 10px;
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+            &--wide {
+                display: none;
+                @media (max-width: 600px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        @media (min-width: 915px) {
+            &--bigger {
+                height: 480px;
+                padding-right: 0;
+                .blog__card__img--square {
+                    display: none;
+                }
+                .blog__card__img--wide {
+                    display: block;
+                    width: 100%;
+                    margin: 0 0 30px 0;
+                }
+                border-right: none;
+                border-bottom: 10px solid $yellow1;
+            }
         }
         &__social-media {
             display: flex;
             justify-content: center;
-            padding-bottom: 20px;
-        }
-        &--bigger {
-            width: calc(50% - 20px);
-            margin: 10px;
-            border-color: $yellow1;
-            .image {
-                width: 100%;
-            }
-        }
-    }
-    &__small-cards {
-        display: flex;
-        flex-direction: column;
-        width: calc(50% - 20px);
-        .card {
-            display: block;
-            margin: 10px;
-            border: solid;
-            border-width: 0 10px 0 0;
-            &--green {
-                border-color: $green1;
-            }
-            &--red {
-                border-color: $red1;
-            }
-            .image {
-                display: block;
-                height: 100%;
-                float: left;
-                width: 200px;
-            }
+            flex-flow: row nowrap;
+            padding: 10px 0;
         }
     }
     &__btn {
-        margin: 50px;
+        margin-top: 50px;
         display: inline-block;
     }
 }
@@ -62,6 +107,10 @@
 .contact {
     background: $yellow-bg;
     padding: 50px;
+    @media (max-width: 600px) {
+        background: $yellow1;
+        padding: 50px 10px;
+    }
     &__header-3 {
         font-family: 'Open Sans', sans-serif;
         color:
@@ -71,14 +120,30 @@
         margin: 0;
         padding: 20px;
         border: 10px solid white;
+        @media (max-width: 1024px) {
+            font-size: 50px;
+        }
+        @media (max-width: 700px) {
+            font-size: 25px;
+            padding: 0;
+            border: none;
+            color: white;
+        }
         &:hover {
             color: white;
+            @media (max-width: 700px) {
+                color: #343434
+            }
         }
     }
     &__header-4 {
         font-size: 40px;
         line-height: 55px;
         margin-bottom: 20px;
+        @media (max-width: 700px) {
+            font-size: 30px;
+            color: black;
+        }
     }
     &__header-5 {
         font-family: 'Open Sans', sans-serif;
@@ -88,5 +153,9 @@
         line-height: 55px;
         text-align: center;
         margin: 10px 0;
+        @media (max-width: 600px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 }

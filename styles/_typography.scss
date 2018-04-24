@@ -16,6 +16,12 @@ a {
     text-align: center;
     text-transform: uppercase;
     margin: 20px 0;
+    @media (max-width: 1024px) {
+        margin-top: 0;
+    }
+    @media (max-width: 600px) {
+        font-size: 35px;
+    }
 }
 
 .header-3 {
@@ -60,11 +66,20 @@ a {
     text-align: center;
     width: 50%;
     margin: 0 auto;
+    @media (max-width: 600px) {
+        width: 80%;
+        font-size: 15px;
+        line-height: 20px;
+    }
     &--darker {
         color: #343434;
         text-align: left;
         width: 100%;
-        margin-top: 20px;
+        margin: 20px 0 0 0;
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
     &--smaller {
         font-size: 16px;
