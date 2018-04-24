@@ -86,6 +86,23 @@ a {
         line-height: 24px;
         width: 100%;
     }
+    &--hr {        
+        position: relative;
+        margin-bottom: 70px;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 200px;
+            border-bottom: 2px solid #474747;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        &--dark::after {
+            border-bottom: 2px solid #373737;
+        }
+    }
 }
 
 .btn, .portfolio__gallery__figure__caption {
